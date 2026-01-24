@@ -1,0 +1,15 @@
+
+@import "tailwindcss";
+
+
+@keyframes kenBurnsSlow {
+  0% {
+    transform: scale(2) translateY(2);
+  }
+  50% {
+    transform: scale(1.08) translateY(-6px);
+  }
+  100% {
+    transform: scale(1) translateY(2);
+  }
+}
