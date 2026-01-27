@@ -9,12 +9,13 @@ import pic2 from "../assets/pic2.jpg";
 import pic3 from "../assets/pic3.jpg";
 import pot1 from "../assets/pot1.jpg";
 import { SkillsSection } from "./SkillsSection";
-import { StatsSection } from "./StatsSection";
+import { ServicesSection } from "./StatsSection";
 export function HomeCard() {
   const servicesData = [
-    { id: 1, name: "Web Development", image: pic1, description: "Modern websites" },
-    { id: 2, name: "Mobile Apps", image: pic2, description: "Android & iOS apps" },
-    { id: 3, name: "UI/UX Design", image: pic3, description: "Clean UI designs" },
+    { id: 1, name: "Web Developmenter", image: pic1, price: 500, description: "Build modern full stack websites" },
+    { id: 2, name: "web Developer", image: pic2, price: 800, description: "Build modern full stack websites" },
+    { id: 3, name: "web Deveper", image: pic3, price: 400, description: "Build modern full stack websites" },
+    
   ];
 
   return (
@@ -76,7 +77,7 @@ export function HomeCard() {
 
     </div>
 <SkillsSection />
-<StatsSection />
+<ServicesSection />
     </>
   );
 }
