@@ -1,10 +1,12 @@
-import { HomeCard } from "../Components/HomeCard";
+import HomeCard from "../Components/HomeCard";
 
 
 export function Home(){
     return(
         <>
-        <HomeCard/>
+     
+    <HomeCard />   
+        
         </>
     )
 }

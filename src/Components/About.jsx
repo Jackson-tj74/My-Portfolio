@@ -1,119 +1,109 @@
 
-import pic1 from "../assets/pic1.jpg";
+import React from "react";
 
-function AboutMeCard() {
+ function AboutMeCard() {
   return (
-    <section className="relative py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative py-20 bg-[#F2F2F2] text-gray-800 px-[60px] font-sans overflow-hidden">
+      
+      
+      
+      <div className="absolute inset-0 opacity-[0.1]" 
+           style={{ 
+             backgroundImage: 'linear-gradient(#000 1.2px, transparent 1.2px), linear-gradient(90deg, #000 1.2px, transparent 1.2px)', 
+             backgroundSize: '40px 40px' 
+           }}>
+      </div>
 
-        {/* Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-            About <span className="text-pink-500">Me</span>
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            A brief overview of my background, education, and technical skills.
-          </p>
+      <div className="max-w-7xl mx-auto relative z-10">
+        
+        
+        <div className="flex items-center justify-center gap-6 mb-20">
+          <div className="h-[2px] bg-black w-full"></div>
+          <div className="text-center shrink-0">
+            <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-black uppercase leading-none">
+              ABOUT <span className="text-[#64BC4C]">ME</span>
+            </h2>
+            <p className="font-bold text-gray-500 tracking-[0.4em] uppercase text-xs mt-3">
+              ALLOW ME TO INTRODUCE MYSELF.
+            </p>
+          </div>
+          <div className="h-[2px] bg-black w-full"></div>
         </div>
 
-        {/* CARD */}
-        <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8 md:p-12 space-y-12">
-
-          {/* IMAGE + INTRO */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-
-            {/* IMAGE */}
-            <div className="relative flex justify-center">
-              <div className="absolute -inset-2 bg-pink-500/30 blur-2xl rounded-3xl"></div>
-              <img
-                src={pic1}
-                alt="Profile"
-                className="relative w-64 h-80 object-cover rounded-2xl border border-white/10 shadow-xl"
-              />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          
+          
+          <div className="lg:col-span-5 flex flex-col items-center">
+            <div className="relative rotate-[-4deg] hover:rotate-0 transition-transform duration-500 shadow-2xl group">
+              
+              
+              <div className="absolute -top-12 -left-10 text-[#64BC4C] font-serif text-3xl italic flex flex-col items-center opacity-80">
+                <span className="mb-1">That's me</span>
+                <svg width="45" height="45" viewBox="0 0 40 40" fill="none" className="rotate-[120deg]">
+                  <path d="M5 5C5 5 15 30 35 35M35 35L25 35M35 35L35 25" stroke="#64BC4C" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </div>
+              
+            
+              <div className="bg-white p-5 pb-24 border border-gray-200 shadow-2xl">
+                <img
+                  src="pic1.jpg"
+                  alt="Tuyikunde Jackson"
+                  className="w-[320px] h-[380px] object-cover border border-gray-100 grayscale group-hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
             </div>
-
-            {/* TEXT */}
-            <div className="space-y-6 text-gray-200 text-lg leading-relaxed">
-              <p>
-                My name is{" "}
-                <span className="font-bold text-pink-400">
-                  Tuyikunde Jackson
-                </span>
-                . I am an aspiring{" "}
-                <span className="font-semibold text-pink-400">
-                  web developer
-                </span>{" "}
-                passionate about building clean, modern, and user-friendly web
-                applications. I am highly motivated to learn new technologies and
-                use them to create meaningful digital solutions.
-              </p>
-
-              <p>
-                I completed my high school education in{" "}
-                <span className="font-semibold text-white">MCE</span>. During my
-                studies, I developed a strong interest in software development
-                and problem-solving. I later joined{" "}
-                <span className="font-semibold text-white">
-                  Nyabiheke Alight Coding School
-                </span>
-                , where I strengthened my frontend and backend skills.
-              </p>
-            </div>
-
           </div>
 
-          {/* INFO GRID */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <div className="bg-gray-900/60 rounded-2xl p-6 hover:-translate-y-1 transition">
-              <h3 className="text-xl font-bold text-pink-400 mb-4">
-                🎓 Education & Certificates
-              </h3>
-              <ul className="space-y-2 text-gray-300 list-disc list-inside text-sm">
-                <li>High School Diploma (MCE) – GS Nyabiheke</li>
-                <li>Coding School Certificate – Frontend & Backend</li>
-                <li>Entrepreneurship Challenge Certificate</li>
-                <li>Duolingo International Certificate</li>
-                <li>Academic English Certificates (B1 & B2)</li>
-                <li>Vocabulary for Academic Purposes – ReallyEnglish</li>
-              </ul>
+        
+          <div className="lg:col-span-7 space-y-8">
+            <div className="text-xl leading-relaxed text-gray-700 space-y-6">
+              <p className="first-letter:text-5xl first-letter:font-black first-letter:text-black first-letter:mr-3 first-letter:float-left">
+                My name is <span className="font-bold border-b-4 border-[#64BC4C] text-black">Tuyikunde Jackson</span>. 
+                I'm an aspiring <span className="text-[#64BC4C] font-bold italic">web developer</span> passionate about building clean, modern, and user-friendly web applications. 
+                I graduated high school in (MCE) combination and later joined Nyabiheke Alight Coding School to master full-stack skills.
+              </p>
+              <p>
+                My specialty is front-end web design and development, making pixel magic and turning it into beautiful, semantic 
+                <span className="font-bold text-black uppercase ml-1">HTML, CSS & REACT</span>. 
+                I am highly motivated to create meaningful digital solutions for real-world problems.
+              </p>
             </div>
 
-            <div className="bg-gray-900/60 rounded-2xl p-6 hover:-translate-y-1 transition">
-              <h3 className="text-xl font-bold text-pink-400 mb-4">
-                💻 Coding Skills
-              </h3>
-              <ul className="space-y-2 text-gray-300 list-disc list-inside text-sm">
-                <li>HTML, CSS, JavaScript</li>
-                <li>React & Tailwind CSS</li>
-                <li>Node.js & Express</li>
-                <li>SQL & NoSQL Databases</li>
-                <li>Full-Stack Web Development</li>
-              </ul>
-            </div>
+          
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-12 border-t-2 border-black/10">
+              
+             
+              <div>
+                <h3 className="font-black text-2xl mb-6 uppercase italic tracking-tighter">THINGS I LOVE</h3>
+                <div className="flex gap-8 items-center opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                  <span className="text-5xl" title="React">⚛️</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+             <path d="M4 4h16v6H4V4zm0 10h16v6H4v-6zm2 2v2h2v-2H6z"/>
+                       </svg>
 
-            <div className="bg-gray-900/60 rounded-2xl p-6 hover:-translate-y-1 transition">
-              <h3 className="text-xl font-bold text-pink-400 mb-4">
-                🌍 Language & Communication
-              </h3>
-              <ul className="space-y-2 text-gray-300 list-disc list-inside text-sm">
-                <li>Academic English (B1 – B2)</li>
-                <li>Business Speaking – Intermediate</li>
-                <li>Practical English (A0 – C1)</li>
-              </ul>
-            </div>
 
-            <div className="bg-gray-900/60 rounded-2xl p-6 hover:-translate-y-1 transition">
-              <h3 className="text-xl font-bold text-pink-400 mb-4">
-                🚀 Additional Info
-              </h3>
-              <ul className="space-y-2 text-gray-300 list-disc list-inside text-sm">
-                <li>All certificates are authentic</li>
-                <li>Continuously improving through real projects</li>
-                <li>Strong interest in modern UI/UX design</li>
-              </ul>
-            </div>
+                  <span className="text-4xl font-black italic">Web</span>
+                </div>
+              </div>
 
+             
+              <div>
+                <h3 className="font-black text-2xl mb-6 uppercase italic tracking-tighter">LOOK WHAT I CAN DO</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+                  {[
+                     "React.js", "Tailwind CSS", 
+                      
+                    ,  "Frontend Dev", "Backend Dev","Node.js(with mongodb database)","Problem Solving"
+                  ].map((skill) => (
+                    <div key={skill} className="flex items-center gap-2 font-bold text-gray-900 text-[13px] tracking-wide">
+                      <span className="text-[#64BC4C] text-2xl font-black leading-none">+</span> {skill.toUpperCase()}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
@@ -121,5 +111,4 @@ function AboutMeCard() {
     </section>
   );
 }
-
-export default AboutMeCard;
+export default AboutMeCard
