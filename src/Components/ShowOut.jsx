@@ -1,13 +1,14 @@
 import { Outlet } from "react-router";
-import { NavBar } from "./NavBar";
 import Footer from "./Footer";
+import { NavBar } from "./NavBar";
 
 export function ShowOut(){
 return(
     <>
-
+  
+    <NavBar />
     <Outlet />
-    <Footer />
+    
     </>
 )
 }
