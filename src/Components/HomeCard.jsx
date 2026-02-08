@@ -37,8 +37,8 @@ const HomeCard = () => {
       <section className="py-20 px-[60px] bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center">My Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {['Web Development', 'UI/UX Design', 'Cloud Solutions'].map((service, i) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {['Web Development', , 'Cloud Solutions'].map((service, i) => (
               <div key={i} className="p-10 border border-gray-100 rounded-[30px] hover:shadow-2xl transition bg-light-secondary group">
                 <div className="w-14 h-14 bg-secondary rounded-2xl mb-6 flex items-center justify-center text-white text-2xl">
                    {i === 0 ? "💻" : i === 1 ? "🎨" : "☁️"}
